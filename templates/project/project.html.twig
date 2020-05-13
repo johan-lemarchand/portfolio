@@ -1,0 +1,109 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<body class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover" style="background-image:url('https://source.unsplash.com/1L71sPT5XKc');">
+
+<div class='flex flex-wrap items-center justify-between '>
+  <a href="/"> <span class='pulse-button-two bg-blue-800'>Accueil</span></a>
+  <a href="/presentation"> <span class='pulse-button-two bg-blue-800'>Mon histoire</span></a>
+  <a href="/contact"> <span class='pulse-button-three bg-blue-800'>Me contactez</span></a>
+</div>
+
+
+<div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
+    
+	<!--Main Col-->
+	<div id="profile" class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0">
+	
+
+		<div class="p-4 md:p-12 text-center lg:text-left">
+			<!-- Image for mobile view-->
+			<div class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" style="background-image: url('https://zupimages.net/up/20/19/9mxw.jpg')"></div>
+			
+			<h1 class="text-3xl font-bold pt-8 lg:pt-0">Mes languages</h1>
+            <div class="flex flex-row">
+            <div>
+            <img class="w-12 h-12 ml-3 mt-4" src="{{ asset('images/logo/html.png')}}" /><p class="m-4">html</p> 
+            </div>
+            <div>
+            <img class="w-12 h-12 ml-3 mt-4" src="{{ asset('images/logo/css3.png')}}" /><p class="m-4">css3</p> 
+            </div>
+            <div>
+            <img class="w-12 h-12 ml-3 mt-4" src="{{ asset('images/logo/php.png')}}" /><p class="m-4">php</p> 
+            </div>
+            <div>
+            <img class="w-12 h-12 ml-5 mt-4" src="{{ asset('images/logo/js.png')}}" /><p class="m-4">javascript</p> 
+            </div>
+            <div>
+            <img class="w-12 h-12 ml-5 mt-4" src="{{ asset('images/logo/sql.png')}}" /><p class="m-4">mysql</p> 
+            </div>
+            </div>
+			<div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-teal-500 opacity-25">
+            </div>
+            <h1 class="text-3xl font-bold pt-8 lg:pt-0">Mes frameworks et librairies</h1>
+            <div class="flex flex-row">
+            <div>
+            <img class="w-12 h-12 ml-3 mt-4" src="{{ asset('images/logo/symfony.png')}}" /><p class="m-4">symfony</p> 
+            </div>
+            <div>
+            <img class="w-12 h-12 ml-3 mt-4" src="{{ asset('images/logo/téléchargement.png')}}" /><p class="m-4">vue.js (en cours)</p> 
+            </div>
+            <div>
+            <img class="w-12 h-12 ml-3 mt-4" src="{{ asset('images/logo/tailwind-pre.png')}}" /><p class="m-4">tailwind css</p> 
+            </div>
+             <div>
+            <img class="w-12 h-12 ml-3 mt-4" src="{{ asset('images/logo/bootstrap.png')}}" /><p class="m-4">bootstrap</p> 
+            </div>
+             <div>
+            <img class="w-12 h-12 ml-3 mt-4" src="{{ asset('images/logo/react.png')}}" /><p class="m-4">react (en cours)</p> 
+            </div>
+            
+            </div>
+			<div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-teal-500 opacity-25">
+            </div>
+            <h1 class="text-3xl font-bold pt-8 lg:pt-0">Autres</h1>
+            <div class="flex flex-row">
+            <div>
+            <img class="w-12 h-12 ml-3 mt-4" src="{{ asset('images/logo/apiplatform.png')}}" /><p class="m-4">api-plateform</p> 
+            </div>
+            <div>
+            <img class="w-12 h-12 ml-3 mt-4" src="{{ asset('images/logo/méthode-Agile.png')}}" /><p class="m-4">méthode-Agile</p> 
+            </div>
+            <div>
+            <img class="w-12 h-12 ml-3 mt-4" src="{{ asset('images/logo/formation-adobe-xd.png')}}" /><p class="m-4">adobe-xd</p> 
+            </div>
+            <div>
+            <img class="w-12 h-12 ml-3 mt-4" src="{{ asset('images/logo/git.png')}}" /><p class="m-4">git</p> 
+            </div>
+			<div>
+            <img class="w-12 h-12 ml-5 mt-4" src="{{ asset('images/logo/ubuntu.png')}}" /><p class="m-4">ubuntu</p> 
+            </div>
+		</div>
+</div>
+	</div>
+    <div class="w-full lg:w-2/5 ">
+	<div class="rounded-lg lg:rounded-r-lg lg:rounded-l-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0 ">
+	<div class="p-4 md:p-12 lg:text-left">
+			<!-- Image for mobile view-->
+			<div class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" style="background-image: url('https://zupimages.net/up/20/19/9mxw.jpg')"></div>
+			
+			<h1 class="text-3xl font-bold pt-8 lg:pt-0">Mes projets</h1>
+            <div class="flex flex-row">
+            
+            </div>
+         
+		</div>
+		</div>
+		</div>
+	</div>
+</div>       
+
+    
+</body>
+{% endblock %}
+
+
+
+
+
+

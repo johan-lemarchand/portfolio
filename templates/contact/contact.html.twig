@@ -1,0 +1,66 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+
+<body class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover" style="background-image:url('https://source.unsplash.com/1L71sPT5XKc');">
+
+<div class='flex flex-wrap items-center justify-between '>
+  <a href="/"> <span class='pulse-button-two bg-blue-800'>Accueil</span></a>
+  <a href="/presentation"> <span class='pulse-button-two bg-blue-800'>Mon histoire</span></a>
+  <a href="/project"> <span class='pulse-button-three bg-blue-800'>Mes projets</span></a>
+</div>
+
+<div class="flex flex-wrap justify-center mt-20">
+
+{{ form_start(formContact)}}
+{{ form_row(formContact._token) }}
+<div class="w-full max-w-lg mt-20">
+  <div class="flex flex-wrap -mx-3 mb-6">
+    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+      <label class="block uppercase tracking-wide text-white text-xs font-bold mb-2" for="grid-first-name">
+       Nom
+      </label>
+     
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type={{ form_widget(formContact.nom)}}
+      
+    </div>
+    <div class="w-full md:w-1/2 px-3">
+      <label class="block uppercase tracking-wide text-white text-xs font-bold mb-2" for="grid-last-name">
+        Prénom
+      </label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type={{ form_widget(formContact.prenom)}}
+    </div>
+  </div>
+  <div class="flex flex-wrap -mx-3 mb-6">
+    <div class="w-full px-3">
+      <label class="block uppercase tracking-wide text-white text-xs font-bold mb-2" for="grid-password">
+        E-mail
+      </label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type={{ form_widget(formContact.email)}}
+      
+    </div>
+  </div>
+  <div class="flex flex-wrap -mx-3 mb-6">
+    <div class="w-full px-3">
+      <label class="block uppercase tracking-wide text-white  text-xs font-bold mb-2" for="grid-password">
+        Message
+      </label>
+      <textarea class=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none" id="message" type={{ form_widget(formContact.message)}}</textarea>
+    </div>
+  </div>
+  <div class="md:flex md:items-center">
+    <div class="md:w-1/3">
+      <button class="shadow bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="submit">
+        Envoyez
+      </button>
+    </div>
+    <div class="md:w-2/3"></div>
+  </div>
+</div>
+{{ form_end(formContact)}}
+</div>
+</div>
+
+
+{% endblock %}
